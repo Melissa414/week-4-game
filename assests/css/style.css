@@ -1,0 +1,31 @@
+body{
+	color: white;
+	background-image: url("http://cdn.allwallpaper.in/wallpapers/1328x856/16182/spaceships-millennium-falcon-x-wing-science-fiction-artwork-1328x856-wallpaper.jpg")
+}
+h2{
+/*	margin-top: 70px;*/
+}
+img{
+/*	padding-top: 20px;
+	border:solid;
+	border-width: 3px;*/
+
+}
+/*#bobaFet{
+	margin:50px;
+}
+#darthSidious{
+	margin: 43px;
+}
+#lukeSkywalker{
+	margin: 10px;
+}
+#darthVader{
+	margin: 15px;*/
+}
+h1{
+	margin-top: -10px;
+	text-align: center;
+	color: white;
+	font-size: 85px;
+}
