@@ -1,10 +1,10 @@
 
 $(document).ready(function(){
 
-var bobaFett= [name="Boba Fet", attack="6", counter="8"];
-var darthSidious= [name="Darth Sidious", attack="6", counter="10"];
-var lukeSkywalker= [name="Luke Skywaker", attack="6", counter="7"];		
-var darthVader= [name="Darth Vader", attack="6", counter="10"];
+var bobaFett= [name='Boba Fet', attack='6', counter='8'];
+var darthSidious= [name='Darth Sidious', attack='6', counter='10'];
+var lukeSkywalker= [name='Luke Skywaker', attack='6', counter='7'];		
+var darthVader= [name='Darth Vader', attack='6', counter='10'];
 var playerHealth=115;
 var computerHealth=110;
 
@@ -12,32 +12,57 @@ var computerHealth=110;
 	// 	players[i]
 	// }
 
-	//boba fight
-	$("#bobaFett").click(function(){
+	//picking boba fight
+	$('.bobafett').click(function(){
+		$("h2").append();
+		$(".darthsidious").hide();
+		$(".lukeskywalker").hide();
+		$(".darthvader").hide();
 		
+
+
 		
 
+		// alert('it works!');
 
 	});
-	//emperor poopatine fight
-	$("#darthSidious").click(function(){
-	
+	//picking emperor poopatine fight
+	$('.darthsidious').click(function(){
+		$("h2").append();
+		$(".bobafett").hide();
+		$(".lukeskywalker").hide();
+		$(".darthvader").hide();
 
+
+
+		// alert('yes!');
 
 	});
-	//luke fight
-	$("#lukeSkywalker").click(function(){
+	//picking uke fight
+	$('.lukeskywalker').click(function(){
+		$("h2").append();
+		$(".bobafett").hide();
+		$(".darthsidious").hide();
+		$(".darthvader").hide();
 
 
+
+		// alert('thank you!');
 
 	});
-	//vader fight
-	$("#darthVader").click(function(){
+	//picking vader fight
+	$('.darthvader').click(function(){
+		$("h2").append();
+		$(".bobafett").hide();
+		$(".darthsidious").hide();
+		$(".lukeskywalker").hide();
 
 
 
+		// alert('alright!');
 
 	});
 
 	
 });
+
