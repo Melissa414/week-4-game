@@ -8,30 +8,33 @@ var darthVader= [name='Darth Vader', attack='6', counter='10'];
 var playerHealth=115;
 var computerHealth=110;
 
-	// for (var i = players.length * 6; i >= 0; i--) {
-	// 	players[i]
-	// }
+
+//music playing
+var audio = new Audio('assests/music/starwars.mp3');
+audio.play();
+
+
 
 	//picking boba fight
 	$('.bobafett').click(function(){
-		$("h2").append();
-		$(".darthsidious").hide();
-		$(".lukeskywalker").hide();
-		$(".darthvader").hide();
+		$("h3").append();
+		$("h2").hide();
+		$(".darthsidious").appendTo("p");
+		$(".lukeskywalker").appendTo("p");
+		$(".darthvader").appendTo("p");
 		
 
-
-		
 
 		// alert('it works!');
 
 	});
 	//picking emperor poopatine fight
 	$('.darthsidious').click(function(){
-		$("h2").append();
-		$(".bobafett").hide();
-		$(".lukeskywalker").hide();
-		$(".darthvader").hide();
+		$("h3").append();
+		$("h2").hide();
+		$(".bobafett").appendTo("p");
+		$(".lukeskywalker").appendTo("p");
+		$(".darthvader").appendTo("p");
 
 
 
@@ -40,10 +43,11 @@ var computerHealth=110;
 	});
 	//picking uke fight
 	$('.lukeskywalker').click(function(){
-		$("h2").append();
-		$(".bobafett").hide();
-		$(".darthsidious").hide();
-		$(".darthvader").hide();
+		$("h3").append();
+		$("h2").hide();
+		$(".bobafett").appendTo("p");
+		$(".darthsidious").appendTo("p");
+		$(".darthvader").appendTo("p");
 
 
 
@@ -52,16 +56,21 @@ var computerHealth=110;
 	});
 	//picking vader fight
 	$('.darthvader').click(function(){
-		$("h2").append();
-		$(".bobafett").hide();
-		$(".darthsidious").hide();
-		$(".lukeskywalker").hide();
+		$("h3").append();
+		$("h2").hide();
+		$(".bobafett").appendTo("p");
+		$(".darthsidious").appendTo("p");
+		$(".lukeskywalker").appendTo("p");
 
 
 
 		// alert('alright!');
 
 	});
+
+	$('.btn-group').click(function() {
+			$('.players').restart();
+		});
 
 	
 });
