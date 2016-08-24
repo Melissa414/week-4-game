@@ -4,7 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Star Wars</title>
 
+	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="assests/css/style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono" rel="stylesheet">
 
 
@@ -12,39 +16,55 @@
 <body>
 <div>
 	<div class="container">
-	<!--basic info-->
+	
 	<h1>Star Wars RPG</h1>
 
 
 	<h2>Pick your player:</h2>
 
 	<div class="players">
-	<div class="row">
-  	<div class="col-sm-4 col-sm-4 col-sm-4 col-sm-4">
-     	 <img class= "bobafett" src="assests/images/bobafett.jpeg" height="160px" width="145px">
-     	 <img class= "darthsidious" src="assests/images/darthsidious.jpeg" height="160px" width="145px">
-     	 <img class= "lukeskywalker" src="assests/images/lukeskywalker.jpg" height="160px" width="145px">
-     	 <img class= "darthvader" src="assests/images/darthvader.jpg" height="160px" width="145px">
-    	</a>
-  	</div>
-	</div>
+		<div class="row">
+  			<div class="col-s-4 col-s-4 col-s-4 col-s-4">
+		     	 <button id= "boba"><h4>Boba Fet</h4><img src="assests/images/bobafett.jpeg" height="160px" width="145px">
+		     	 <h5 class="health">95</h5>
+
+		     	 <button id= "sidious"><h4>Darth Sidious</h4><img src="assests/images/darthsidious.jpeg" height="160px" width="145px">
+		     	 <h5 class="health">120</h5>
+
+		     	 <button id= "luke"><h4>Luke Skywalker</h4><img src="assests/images/lukeskywalker.jpg" height="160px" width="145px">
+		     	 <h5 class="health">115</h5>
+
+		     	 <button id= "vader"><h4>Darth Vader</h4><img src="assests/images/darthvader.jpg" height="160px" width="145px">
+		     	 <h5 class="health">105</h5>
+	    		<!-- </a> -->
+  			</div>
+		</div>
 	</div>
 
 
 	<h3>Your Character:</h3>
-	
+	<div id='yourCharacter'></div>
+
+	<!--attack button-->
+	<div class="attk-btn-group" role="group" aria-label="button">
+  	<button type="button" class="attk-btn-default">Attack!</button>
+  	</div>
+
 
 	<h4>Enemies:</h4>
+	<p id='yourEnemies'></p>
 
-		<p></p>
-
-
-	<div class="btn-group" role="group" aria-label="button">
-  	<button type="button" class="btn btn-default">Play Again</button>
+	<!--restart button-->
+	<div class="restart-btn-group" role="group" aria-label="button">
+  	<button type="button" class="restart-btn-default">Play Again</button>
   	</div>
 
 
 
+
+
+
+  	<!--Jquery CDN-->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src= "assests/javascript/game.js"></script>
 
