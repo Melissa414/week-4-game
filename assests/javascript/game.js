@@ -5,26 +5,37 @@ var bobaFett= {
 		name: 'Boba Fett', 
 		health: 95, 
 		attk: 6, 
-		counterattk: 7}
+		counterattk: 7
+	}
 
 var darthSidious= {
 		name:'Darth Sidious', 
 		health: 120, 
 		attk: 6, 
-		counterattk: 10}
+		counterattk: 10
+	}
 
 var lukeSkywalker= {
 		name:'Luke Skywaker', 
 		health: 115, 
 		attack: 6, 
-		counterattk: 8}	
+		counterattk: 8
+	}	
 
 var darthVader= {
 		name:'Darth Vader',
 		health: 105, 
 		attk: 6, 
-		counterattk: 8}
+		counterattk: 8
+	}
 
+var powerUp={
+		hp:6
+	}
+
+var yourEnemies= ['Boba Fett', 'Darth Sidious', 'Luke Skywalker', 'Darth Vader'];
+
+var yourCharacter= ['Boba Fett', 'Darth Sidious', 'Luke Skywalker', 'Darth Vader'];
 
 //music playing
 var audio = new Audio('assests/music/starwars.mp3');
@@ -34,7 +45,7 @@ audio.play();
 
 	//picking boba battle
 	$('#boba').click(function(){
-		$('h3').append('#yourCharacter')
+		$('#yourCharacter').append()
 		$('h2').hide();
 		$('#sidious, #luke, #vader').appendTo('#yourEnemies');
 
@@ -44,7 +55,7 @@ audio.play();
 	});
 	//picking emperor poopatine battle
 	$('#sidious').click(function(){
-		$('h3').append('#yourCharacter');  // thing to attach to.append(thing to attach) 
+		$('#yourCharacter').append(); 
 		$('h2').hide();
 		$('#boba, #luke, #vader').appendTo('#yourEnemies');
 
@@ -54,7 +65,7 @@ audio.play();
 	});
 	//picking luke battle
 	$('#luke').click(function(){
-		$('h3').append('#yourCharacter');
+		$('#yourCharacter').append();
 		$('h2').hide();
 		$('#boba, #sidious, #vader').appendTo('#yourEnemies');
 
@@ -64,7 +75,7 @@ audio.play();
 	});
 	//picking vader battle
 	$('#vader').click(function(){
-		$('h3').append('#yourCharacter');
+		$('#yourCharacter').append();
 		$('h2').hide();
 		$('#boba, #sidious, #luke').appendTo('#yourEnemies');
 
@@ -75,7 +86,10 @@ audio.play();
 
 		//attack button
 	$('.attk-btn-default').click(function() {
-		this.yourCharacter = this.players +6;
+		this.yourCharacter = yourCharacter + 6;
+		this.yourEnemies = yourEnemies - 4;
+
+
 	});
 
 

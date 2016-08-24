@@ -5,10 +5,8 @@ body{
 	background-image: url("http://cdn.allwallpaper.in/wallpapers/1328x856/16182/spaceships-millennium-falcon-x-wing-science-fiction-artwork-1328x856-wallpaper.jpg")
 }
 
-img{
-	border:solid;
-	border-width: 4px;
-	border-color: #2e2e2e;
+.players{
+	color: #611515;
 }
 
 h1{
@@ -17,11 +15,13 @@ h1{
 	color: white;
 	font-size: 85px;
 }
+
 .text-center{
 	text-align: center;
 }
 
 h2{
+	
 	font-size: 30px;
 
 }
